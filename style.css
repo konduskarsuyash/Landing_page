@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+.back {
+    width: 100%;
+    height: 100vh;
+}
+
+.back img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.top{
+    pointer-events: none;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  
+}
+
+.workArea{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.nav img{
+    height: 150px;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white ;
+}
+
+.left,.right{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav a{
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+}
+
+.hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-38%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hLeft{
+    min-width: 50%;
+}
+
+.hLeft .first{
+    position: relative;
+    height: 9vw;
+    overflow: hidden;
+}
+
+.hLeft .first h1:nth-child(1){
+    top: 0;
+}
+
+.hLeft .first h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: .9;
+    font-family: "kajiro";
+    color: white;
+    font-weight:100 ;
+    font-size: 11vw;
+}
+
+
+
+.hLeft button{
+    pointer-events: all;
+    padding: 0.8vw 3vw;
+    font-size: 3vw;
+    margin-top: 3vw;
+    font-family: "kajiro";
+    border: none;
+    border-radius: 12px;
+
+}
+
+.hRight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 17%;
+    color: white;
+}
+
+.hRight p{
+    text-align: right;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.hRight .imagediv{
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image:url('https://images.unsplash.com/photo-1477814670986-8d8dccc5640d?auto=format&fit=crop&q=80&w=873&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+}
+
+.hRight p:nth-child(3){
+    margin-bottom:100px  ;
+}
